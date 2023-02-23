@@ -226,7 +226,7 @@ main {
     align-items: center;
 }
 
-.characteristic_svg {
+.characteristic__image-svg {
 
 }
 
@@ -347,7 +347,7 @@ footer {
 .email-form__input {
     background: #FFFFFF;
     border: none;
-    height: 80px;
+    height: auto;
     width: 320px;
     margin-right: 0;
     font-family: 'Montserrat';
@@ -467,12 +467,13 @@ footer {
     align-items: center;
     gap: 13px;
     justify-content: center;
-    width: 337px;
-    height: 300px;
+    max-width: 337px;
+    /* height: 300px; */
     padding: 33px 44px;
     background: #FFFFFF;
     box-shadow: 49px 102px 45px rgba(0, 0, 0, 0.01), 27px 57px 38px rgba(0, 0, 0, 0.05), 12px 25px 28px rgba(0, 0, 0, 0.09), 3px 6px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
+    box-sizing: border-box;
 }
 
 
