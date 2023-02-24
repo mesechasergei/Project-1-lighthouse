@@ -30,17 +30,6 @@
         margin-bottom: 25px;
     }
 
-    .button_size_small {
-        width: auto;
-        padding: 10px;
-    }
-
-    .floor-selection-container {
-        padding: 20px;
-        display: grid;
-        grid-template-areas: "a b" "c d";
-        max-width: 280px;
-    }
 
     .types-container {
         max-width: 1180px;
@@ -72,11 +61,12 @@
     body {
         font-size: 16px;
         line-height: 25px;
+        width: 100%;
     }
 
     header {
         height: 300px;
-        padding-top: 25px;
+        padding-top: 100px;
     }
 
     .logo {
@@ -109,6 +99,18 @@
         padding: 10px;
         width: 180px;
         height: auto;
+    }
+
+    .floor-selection-container {
+        padding: 20px;
+        display: grid;
+        grid-template-areas: "a b" "c d";
+        max-width: 280px;
+    }
+
+    .button_size_small {
+        width: auto;
+        padding: 10px;
     }
 
     #header-types-button {
@@ -184,12 +186,65 @@
 
 
 @media screen and (max-width: 700px){
+    main {
+        padding: 5px; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .button {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .characteristic__text{
-        display: none;
+        /* display: none; */
     }
 
     .characteristic__item:hover .characteristic__text{
-        display: block;
+        /* display: block; */
+    }
+
+    .characteristic__item{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .button_size_middle , .button_size_big{
+        padding: 5px;
+        height: auto;
+        width: 120px;
+    }
+
+    .characteristic {
+        gap: 5px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .characteristic__text{
+        font-size: 14px;
+        line-height: 20px;
+        width: auto;
+    }
+
+    .characteristic__image-svg {
+        width: 40px;
+    }
+
+    .type-block__title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .type-block{
+        gap: 5px;
+        padding: 10px;
     }
 
     .footer__menu > a {
@@ -200,4 +255,106 @@
         justify-content: center;
     }
 
+    .main-container {
+        flex-direction: column;
+        padding: 0 5px;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+    }
+
+    .main-container__image{
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .about-us-container > .main-container__image{
+        display: none;
+    }
+    .paragraph {
+        max-width: 700px;
+        width: 100%;
+    }
+    /* -------------------------------------------------------------- */
+    nav{
+        display: none;
+    }
+    /* -------------------------------------------------------------- */
+    .floor-selection-container {
+        grid-template-areas: "a" "b" "c" "d";
+        max-width: 450px;
+        max-height: 300px;
+        padding: 5px;
+        gap: 5px;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 5;
+        bottom: -246px;
+        left: 3px;
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+
+    .main-container__text-container {
+        position: relative;
+        gap: 10px;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    #start-vocation-button {
+        align-self: center;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .footer-container {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .email-form {
+        width: 80%;
+        height: auto;
+    }
+
+    .email-form__input {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .email-form__button {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    .header-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header-container > .paragraph {
+        width: 60%;
+    }
+
+    
+}
+
+
+@media screen and (max-width:320px){
+    .characteristic {
+        display: none;
+    }
+
+    .header-container > .paragraph {
+        display: none;
+    }
 }
