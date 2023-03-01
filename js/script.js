@@ -42,3 +42,7 @@ function changeFloor(x){
         break;
     }
 }
+
+function sliderMove(x) {
+    
+}

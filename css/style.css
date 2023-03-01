@@ -327,6 +327,11 @@ main {
     color: #302F34;
 }
 
+.comments__arrow-button {
+    padding: 0;
+    border: none;
+    background-color: white;
+}
 
 /*  ---------------------- footer --------------------------- */
 footer {
