@@ -425,6 +425,9 @@ footer {
     text-align: left;
 }
 
+.menu__button_hide {
+    display: none;
+}
 
 /* -------buttons --------- */
 

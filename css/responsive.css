@@ -276,11 +276,8 @@
         max-width: 700px;
         width: 100%;
     }
-    /* -------------------------------------------------------------- */
-    nav{
-        display: none;
-    }
-    /* -------------------------------------------------------------- */
+    
+    
     .floor-selection-container {
         grid-template-areas: "a" "b" "c" "d";
         max-width: 450px;
@@ -345,7 +342,14 @@
         width: 60%;
     }
 
-    
+    .header__menu > .menu__item {
+        display: none;
+    }
+
+    .header__menu > .logo {
+        display: block;
+    }
+
 }
 
 
