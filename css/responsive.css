@@ -49,6 +49,21 @@
         background-position:50% 50%;
     }
 
+    /* ---------------------- comments -------------------------  */
+
+    .comments-container {
+        margin-top: 50px;
+    }
+
+    .comments-container__slider {
+        top: 100px;
+    }
+
+    .comments__arrow-container {
+        margin-top: 300px;
+        margin-bottom: 30px;
+    }
+
     /*  ---------------------- footer --------------------------- */
 
     footer {
@@ -137,6 +152,18 @@
         gap: 25px;    
     }
     /* ---------------------- comments -------------------------  */
+
+    .comments-container {
+        margin-top: 30px;
+    }
+
+    .comments-container__slider {
+        top: 70px;
+    }
+
+    .comments__arrow-container {
+        margin-top: 300px;
+    }
 
     /*  ---------------------- footer --------------------------- */
 
@@ -321,6 +348,39 @@
 
     /* ---------------------- comments -------------------------  */
 
+    .comments-container__slider {
+        gap: 50px;
+        height: 300px;
+        top: 50px;
+    }
+
+    .comments-container__comment {
+        padding: 15px;
+        height: 200px;
+    }
+
+    #comment-button {
+        width: auto;
+    }
+
+    .comments__arrow-container {
+        margin-top: 250px;
+        gap: 30px;
+    }
+
+    .comments-container-paragraph {
+        font-size: 16px;
+        max-width: 349px;
+        width: 80vw;
+        line-height: 130%;
+        /* resize: inherit !important; */
+    }
+
+    .comments-container__user-name {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
     /*  ---------------------- footer --------------------------- */
 
     .footer__menu > a {
@@ -402,6 +462,16 @@
         align-self: center;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+
+    /* ---------------------- comments -------------------------  */
+
+    .comments-container__comment {
+        width: 90%;
+    }
+    
 }
 
 

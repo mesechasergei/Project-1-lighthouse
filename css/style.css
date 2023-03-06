@@ -71,7 +71,7 @@ nav , footer {
     
 }
 
-.menu__link_active {
+.menu__link_second-language {
     color: rgba(0, 0, 0, 0.55);
 }
 
@@ -215,6 +215,8 @@ main {
     max-width: 600px;
 }
 
+/* ---------------------- characteristic -------------------------  */
+
 .characteristic {
     padding-top: 30px;
     display: flex;
@@ -289,7 +291,7 @@ main {
     padding: 39px 50px 24px 50px;
     height: 245px;
     width: 480px;
-    resize: none !important;
+    /* resize: none !important; */
     border-radius: 30px;
     box-sizing: border-box;
     justify-content: space-between;
@@ -309,7 +311,7 @@ main {
     width: 349px;
     line-height: 170%;
     color: #302F34;
-    resize: none !important;
+    /* resize: none !important; */
 }
 
 .comments-container__user {
