@@ -243,6 +243,14 @@
         width: auto;
         padding: 10px;
     }
+
+    #start-vocation-button {
+        width: auto;
+    }
+
+    #comment-button {
+        width: auto;
+    }
      
 }
 

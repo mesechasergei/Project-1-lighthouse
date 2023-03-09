@@ -97,12 +97,65 @@ const langArr = {
     "floor" : {
         "en" : "Floor",
         "ua" : "Поверх"
+    },
+    "coastal-lighthouse" : {
+        "en" : "coastal lighthouse",
+        "ua" : "береговий маяк"
+    },
+    "more-info" : {
+        "en" : "More Info",
+        "ua" : "Детальніше"
+    },
+    "square-meters" : {
+        "en" : "square meters",
+        "ua" : "квадратних метрів"
+    },
+    "commission-approved" : {
+        "en" : "Commission approved",
+        "ua" : "Затверджено комісією"
+    },
+    "places-for" : {
+        "en" : "Places for",
+        "ua" : "Місця для"
+    },
+    "persons" : {
+        "en" : "persons",
+        "ua" : "осіб"
+    },
+    "lighthouse-on-the-island" : {
+        "en" : "lighthouse on the island",
+        "ua" : "маяк на острові"
+    },
+    "rock-lighthouse" : {
+        "en" : "rock lighthouse",
+        "ua" : "Маяк на скелях"
+    },
+    "start-vocation" : {
+        "en" : "Start Vocation",
+        "ua" : "Почати подорож"
+    },
+    "leave-comment" : {
+        "en" : "Leave Comment",
+        "ua" : "Залишити Відгук"
+    },
+    "stay-in-touch" : {
+        "en" : "Stay In Touch",
+        "ua" : "Залишайся на зв'язку"
+    },
+    "send" : {
+        "en" : "Send",
+        "ua" : "Надіслати"
+    },
+    "send-email" : {
+        "en" : "Send your email",
+        "ua" : "Надішліть Ваш email"
     }
 
 }
 
 function translatePage(x) {
     translationList = document.querySelectorAll('.lang');
+    translationPlaceholderList = document.querySelectorAll('.lang-placeholder');
     // console.log(translationList);
     var lang = "en";
     switch (x) {
@@ -124,5 +177,11 @@ function translatePage(x) {
         var key = translationList[i].getAttribute('key');
         // console.log(key);
         translationList[i].innerHTML = langArr[key][lang];
+    }
+
+    for( var i = 0; i < translationPlaceholderList.length; i++) {
+        var key = translationPlaceholderList[i].getAttribute('key');
+        // console.log(key);
+        translationPlaceholderList[i].placeholder = langArr[key][lang];
     }
 }
